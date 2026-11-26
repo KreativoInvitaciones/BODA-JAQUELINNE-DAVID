@@ -1,12 +1,12 @@
-INVITACIÓN DIGITAL BODA · JAQUELINNE & DAVID
+INVITACIÓN JAQUELINNE Y DAVID - VERSIÓN CORREGIDA
 
-Archivos incluidos:
-- index.html
-- style.css
-- script.js
-- foto-principal.jpg
-- foto-segunda.jpg
-- sello-dorado-jd.png
-- musica.mp3
+Incluye las dos fotografías ORIGINALES de Jaquelinne y David.
 
-Sube TODO el contenido al repositorio reemplazando los archivos anteriores.
+Para GitHub:
+1. Abre el repositorio BODA-JAQUELINNE-DAVID.
+2. En Code > Add file > Upload files, carga todos los archivos de este ZIP, NO el ZIP sin descomprimir.
+3. Mantén exactamente los mismos nombres y acepta reemplazar los archivos existentes.
+4. Confirma mediante Commit changes.
+
+Archivos para subir: index.html, style.css, script.js, foto-principal.jpg, foto-segunda.jpg, sello-dorado-jd.png, musica.mp3.
+LEEME no es necesario subirlo.
