@@ -1,12 +1,15 @@
-INVITACIÓN JAQUELINNE Y DAVID - VERSIÓN CORREGIDA
+INVITACIÓN BODA JAQUELINNE Y DAVID - CORRECCIÓN DE FOTOGRAFÍAS
 
-Incluye las dos fotografías ORIGINALES de Jaquelinne y David.
+SUBE ESTOS 7 ARCHIVOS A LA RAÍZ DE TU REPOSITORIO DE GITHUB:
+- index.html (IMPORTANTE: reemplazar el que ya existe)
+- style.css
+- script.js
+- sello-dorado-jd.png
+- musica.mp3
+- jaquelinne-david-foto-01.jpg
+- jaquelinne-david-foto-02.jpg
 
-Para GitHub:
-1. Abre el repositorio BODA-JAQUELINNE-DAVID.
-2. En Code > Add file > Upload files, carga todos los archivos de este ZIP, NO el ZIP sin descomprimir.
-3. Mantén exactamente los mismos nombres y acepta reemplazar los archivos existentes.
-4. Confirma mediante Commit changes.
-
-Archivos para subir: index.html, style.css, script.js, foto-principal.jpg, foto-segunda.jpg, sello-dorado-jd.png, musica.mp3.
-LEEME no es necesario subirlo.
+Las imágenes usan NOMBRES NUEVOS para que no se muestre la anterior por caché.
+Los archivos antiguos foto-principal.jpg y foto-segunda.jpg pueden permanecer en GitHub, pero este index.html ya NO los usa.
+Asegúrate de que el index.html nuevo quede en la raíz del repositorio y confirma con Commit changes.
+Si aún aparece la imagen vieja, recarga el sitio en el celular cerrando y reabriendo el enlace o usando una ventana privada.
