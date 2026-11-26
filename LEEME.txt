@@ -1,10 +1,12 @@
-INVITACIÓN JAQUELINNE Y DAVID – Versión actualizada
+INVITACIÓN DIGITAL BODA · JAQUELINNE & DAVID
 
-Subir a la RAÍZ del repositorio de GitHub los archivos: index.html, style.css, script.js, foto-principal.jpg y foto-segunda.jpg.
-No subir este archivo LEEME.txt.
+Archivos incluidos:
+- index.html
+- style.css
+- script.js
+- foto-principal.jpg
+- foto-segunda.jpg
+- sello-dorado-jd.png
+- musica.mp3
 
-Iglesia: botón enlaza a https://maps.app.goo.gl/SynGrJrYjm3bBbar8 (enlace proporcionado por el cliente).
-Recepción: Hacienda Los Tabachines; ubicación exacta pendiente. El botón de ubicación no aparece para evitar dirigir invitados a un sitio equivocado.
-Fotografías: las dos fotos originales proporcionadas por el usuario.
-
-Para activar GitHub Pages: Settings > Pages > Deploy from a branch > main / (root) > Save.
+Sube TODO el contenido al repositorio reemplazando los archivos anteriores.
