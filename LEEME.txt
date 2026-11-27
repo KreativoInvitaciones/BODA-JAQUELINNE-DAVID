@@ -1,15 +1,18 @@
-INVITACIÓN BODA JAQUELINNE Y DAVID - CORRECCIÓN DE FOTOGRAFÍAS
+INVITACIÓN DIGITAL DE BODA · JAQUELINNE Y DAVID
+VERSIÓN: Sobre animado + sello de lacre sin fondo + olivo ilustrado
 
-SUBE ESTOS 7 ARCHIVOS A LA RAÍZ DE TU REPOSITORIO DE GITHUB:
-- index.html (IMPORTANTE: reemplazar el que ya existe)
+PARA GITHUB PAGES:
+Sube los siguientes 9 archivos a la RAÍZ de tu repositorio BODA-JAQUELINNE-DAVID, sustituyendo las versiones anteriores:
+- index.html
 - style.css
 - script.js
 - sello-dorado-jd.png
-- musica.mp3
+- olivo-oscuro.svg
+- olivo-claro.svg
 - jaquelinne-david-foto-01.jpg
 - jaquelinne-david-foto-02.jpg
+- musica.mp3
 
-Las imágenes usan NOMBRES NUEVOS para que no se muestre la anterior por caché.
-Los archivos antiguos foto-principal.jpg y foto-segunda.jpg pueden permanecer en GitHub, pero este index.html ya NO los usa.
-Asegúrate de que el index.html nuevo quede en la raíz del repositorio y confirma con Commit changes.
-Si aún aparece la imagen vieja, recarga el sitio en el celular cerrando y reabriendo el enlace o usando una ventana privada.
+Los archivos viejos foto-principal.jpg y foto-segunda.jpg pueden seguir en GitHub, pero esta versión NO los utiliza.
+
+El botón dorado abre el sobre; la solapa se levanta, emerge la carta y aparece la invitación. Sin destellos.

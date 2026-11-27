@@ -9,30 +9,40 @@ const music = BY('bgMusic');
 const musicToggle = BY('musicToggle');
 let alreadyOpen = false;
 
-BY('openInvitation').addEventListener('click', async () => {
+BY('openInvitation').addEventListener('click', () => {
   if (alreadyOpen) return;
   alreadyOpen = true;
+  opening.classList.add('opening-in-progress');
   envelope.classList.add('is-opening');
-
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const duration = reduce ? 100 : 2000;
+  // The envelope opens first; the paper lifts out before the next section appears.
+  window.setTimeout(() => {
+    opening.classList.add('is-leaving');
+    window.setTimeout(() => {
+      opening.remove();
+      content.classList.remove('hidden');
+      content.focus({ preventScroll: true });
+      window.scrollTo(0, 0);
+    }, reduce ? 0 : 380);
+  }, duration);
   try {
     music.volume = 0.55;
-    await music.play();
-    musicToggle.classList.remove('hidden');
-    musicToggle.classList.remove('is-paused');
-    musicToggle.setAttribute('aria-label', 'Pausar música');
+    const started = music.play();
+    if (started && typeof started.then === 'function') {
+      started.then(() => {
+        musicToggle.classList.remove('hidden', 'is-paused');
+        musicToggle.setAttribute('aria-label', 'Pausar música');
+      }).catch(() => {
+        musicToggle.classList.remove('hidden');
+        musicToggle.classList.add('is-paused');
+        musicToggle.setAttribute('aria-label', 'Reproducir música');
+      });
+    }
   } catch (err) {
     musicToggle.classList.remove('hidden');
     musicToggle.classList.add('is-paused');
-    musicToggle.setAttribute('aria-label', 'Reproducir música');
   }
-
-  const delay = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 860;
-  setTimeout(() => {
-    opening.remove();
-    content.classList.remove('hidden');
-    content.focus({ preventScroll: true });
-    window.scrollTo(0, 0);
-  }, delay);
 });
 
 musicToggle.addEventListener('click', async () => {
