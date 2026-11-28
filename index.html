@@ -9,25 +9,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=12">
 </head>
 <body>
 <div id="opening" class="opening" aria-label="Portada de la invitación">
-  <img class="olive-decor olive-top" src="olivo-claro.svg" alt="" aria-hidden="true">
-  <img class="olive-decor olive-bottom" src="olivo-claro.svg" alt="" aria-hidden="true">
+  <img class="cover-olive cover-olive-left" src="olivo-izquierdo.png" alt="" aria-hidden="true">
+  <img class="cover-olive cover-olive-right" src="olivo-derecho.png" alt="" aria-hidden="true">
   <div class="opening-inner">
     <p class="eyebrow opening-kicker">CON LA BENDICIÓN DE DIOS</p>
     <p class="opening-subtitle">CELEBREMOS EL AMOR</p>
-    <div id="envelope" class="envelope" aria-label="Sobre de nuestra boda">
-      <div class="envelope-back"></div>
-      <div class="letter-card">
-        <span class="script-label">Nuestra boda</span>
-        <h1>Jaquelinne <em>&amp;</em> David</h1>
-        <p class="letter-date">02 · ENERO · 2027</p>
-      </div>
-      <div class="envelope-flap"></div>
-      <div class="envelope-front"></div>
-      <button type="button" id="openInvitation" class="wax" aria-label="Tocar el sello para abrir la invitación"><img src="sello-dorado-jd.png" alt="Sello de lacre dorado J y D"></button>
+    <h1 class="cover-names">Jaquelinne <em>&amp;</em> David</h1>
+    <p class="cover-intro">Nuestra boda</p>
+    <div class="approved-envelope" aria-label="Sobre de boda en papel marfil">
+      <img class="approved-envelope-image" src="sobre-marfil.png" alt="Sobre de boda en papel marfil con bordes dorados">
+      <button type="button" id="openInvitation" class="wax" aria-label="Tocar sello J y D para entrar a la invitación"><img src="sello-dorado-jd.png" alt="Sello de cera dorado con iniciales J y D"></button>
     </div>
     <p class="opening-date">SÁBADO · 02 · ENERO · 2027</p>
     <p class="open-hint">TOCA EL SELLO PARA ABRIR</p>
@@ -41,14 +36,14 @@
 
 <main id="content" class="hidden" tabindex="-1">
   <header class="hero">
-    <img class="botanical hero-left" src="olivo-oscuro.svg" alt="" aria-hidden="true">
-    <img class="botanical hero-right" src="olivo-oscuro.svg" alt="" aria-hidden="true">
+    <img class="botanical hero-left" src="olivo-izquierdo.png" alt="" aria-hidden="true">
+    <img class="botanical hero-right" src="olivo-derecho.png" alt="" aria-hidden="true">
     <p class="eyebrow">NOS CASAMOS</p>
     <span class="section-ornament">✧</span>
     <h1>Jaquelinne <span>&amp;</span> David</h1>
     <p class="hero-intro">Después de tantos momentos compartidos, hoy damos el paso más bonito: elegirnos para toda la vida.</p>
-    <div class="hero-photo-frame"><img src="jaquelinne-david-foto-01.jpg?v=4" alt="Fotografía principal de Jaquelinne y David" class="hero-photo"></div>
-    <div class="second-photo-frame"><img src="jaquelinne-david-foto-02.jpg?v=4" alt="Segunda fotografía de Jaquelinne y David" class="second-photo" loading="lazy"></div>
+    <div class="hero-photo-frame"><img src="jaquelinne-david-foto-01.jpg?v=12" alt="Fotografía principal de Jaquelinne y David" class="hero-photo"></div>
+    <div class="second-photo-frame"><img src="jaquelinne-david-foto-02.jpg?v=12" alt="Segunda fotografía de Jaquelinne y David" class="second-photo" loading="lazy"></div>
     <p class="hero-date">SÁBADO 2 DE ENERO DE 2027</p>
     <div class="hero-line"></div>
     <p class="by-god">Con la bendición de Dios y de nuestros padres</p>
@@ -91,8 +86,8 @@
   </section>
 
   <section class="event-section section-card" aria-labelledby="events-title">
-    <img class="botanical section-branch section-branch-left" src="olivo-oscuro.svg" alt="" aria-hidden="true">
-    <img class="botanical section-branch section-branch-right" src="olivo-oscuro.svg" alt="" aria-hidden="true">
+    <img class="botanical section-branch section-branch-left" src="olivo-izquierdo.png" alt="" aria-hidden="true">
+    <img class="botanical section-branch section-branch-right" src="olivo-derecho.png" alt="" aria-hidden="true">
     <p class="eyebrow">ACOMPÁÑANOS A CELEBRAR</p>
     <h2 id="events-title">Nuestro día especial</h2>
     <div class="event-card">
@@ -119,14 +114,19 @@
     <div class="section-ornament">♡</div>
     <p class="eyebrow">TU PRESENCIA ES LO MÁS IMPORTANTE</p>
     <h2 id="gifts-title">Mesa de regalos</h2>
-    <p>El mejor regalo es compartir este día tan especial con nosotros. Si deseas tener un detalle adicional, lo recibiremos con mucho cariño.</p>
+    <p>El mejor regalo es compartir este día tan especial con nosotros. Si deseas tener un detalle adicional, te compartimos el número de evento.</p>
+    <div class="gift-event-card" aria-label="Número de evento para mesa de regalos">
+      <span class="gift-chip">Tarjeta del festejado</span>
+      <p class="gift-event-label">Número de evento</p>
+      <p class="gift-event-number">51 96 22 30</p>
+    </div>
     <div class="gift-line">✧</div>
-    <p class="gift-note">Para los detalles de regalo o transferencia, consulta directamente con los novios.</p>
+    <p class="gift-note">Si necesitas más información sobre la mesa de regalos o transferencia, consulta directamente con los novios.</p>
   </section>
 
   <section class="rsvp section-card" aria-labelledby="rsvp-title">
-    <img class="botanical rsvp-left" src="olivo-claro.svg" alt="" aria-hidden="true">
-    <img class="botanical rsvp-right" src="olivo-claro.svg" alt="" aria-hidden="true">
+    <img class="botanical rsvp-left" src="olivo-izquierdo.png" alt="" aria-hidden="true">
+    <img class="botanical rsvp-right" src="olivo-derecho.png" alt="" aria-hidden="true">
     <span class="section-ornament">✧</span>
     <p class="eyebrow">NOS ENCANTARÁ CONTAR CONTIGO</p>
     <h2 id="rsvp-title">Confirma tu <em>asistencia</em></h2>
@@ -178,8 +178,8 @@
   </section>
 
   <footer class="footer section-card">
-    <img class="botanical footer-left" src="olivo-oscuro.svg" alt="" aria-hidden="true">
-    <img class="botanical footer-right" src="olivo-oscuro.svg" alt="" aria-hidden="true">
+    <img class="botanical footer-left" src="olivo-izquierdo.png" alt="" aria-hidden="true">
+    <img class="botanical footer-right" src="olivo-derecho.png" alt="" aria-hidden="true">
     <div class="footer-leaf">❦</div>
     <p class="eyebrow">GRACIAS POR SER PARTE DE NUESTRA HISTORIA</p>
     <h2>Jaquelinne <em>&amp;</em> David</h2>
@@ -189,6 +189,6 @@
   </footer>
 </main>
 
-<script src="script.js?v=4"></script>
+<script src="script.js?v=12"></script>
 </body>
 </html>

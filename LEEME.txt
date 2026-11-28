@@ -1,18 +1,9 @@
-INVITACIÓN DIGITAL DE BODA · JAQUELINNE Y DAVID
-VERSIÓN: Sobre animado + sello de lacre sin fondo + olivo ilustrado
+JAQUELINNE & DAVID · INVITACIÓN DIGITAL (VERSIÓN SIN ANIMACIÓN DE SOBRE)
 
-PARA GITHUB PAGES:
-Sube los siguientes 9 archivos a la RAÍZ de tu repositorio BODA-JAQUELINNE-DAVID, sustituyendo las versiones anteriores:
-- index.html
-- style.css
-- script.js
-- sello-dorado-jd.png
-- olivo-oscuro.svg
-- olivo-claro.svg
-- jaquelinne-david-foto-01.jpg
-- jaquelinne-david-foto-02.jpg
-- musica.mp3
+Para subir a GitHub: extrae y sube TODOS los archivos (excepto este LEEME.txt) a la raíz del repositorio.
 
-Los archivos viejos foto-principal.jpg y foto-segunda.jpg pueden seguir en GitHub, pero esta versión NO los utiliza.
+Incluye: sobre marfil PNG sin fondo, ramas ilustradas PNG transparentes aprobadas, sello J&D recortado sin fondo, fotos originales, música, confirmación y Google Maps.
+La portada es estática: tocar el sello abre directamente la invitación. No se anima el sobre.
 
-El botón dorado abre el sobre; la solapa se levanta, emerge la carta y aparece la invitación. Sin destellos.
+
+Actualización incluida: mesa de regalos con número de evento 51 96 22 30 y difuminado al tocar el sello de la portada.

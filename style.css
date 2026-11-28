@@ -182,71 +182,68 @@ main{padding:14px 0 32px}
   .envelope-top-flap,.letter-card{transition:none}
 }
 
-/* Versión 5 · Portada móvil renovada, sello recortado y botánica ilustrada */
-.opening{background:radial-gradient(circle at 50% 28%,#526a44 0%,#3f5236 65%,#34462e 100%);transition:opacity .38s ease}
-.opening.is-leaving{opacity:0;pointer-events:none}
-.opening-inner{width:min(100%,400px);min-height:0;justify-content:center;gap:0;z-index:2}
-.opening-kicker{margin:0 0 9px;color:#f5ecdc;letter-spacing:2.7px;font-size:10px}
-.opening-subtitle{font-size:11px;letter-spacing:2.6px;color:#e6ca96;font-weight:700;margin:0 0 16px;text-align:center}
-.olive-decor{position:absolute;pointer-events:none;width:210px;max-width:none;opacity:.70;filter:drop-shadow(0 5px 7px rgba(0,0,0,.06))}
-.olive-top{top:-75px;left:-85px;transform:rotate(-23deg)}
-.olive-bottom{bottom:-94px;right:-75px;transform:rotate(160deg)}
-.envelope{height:348px;width:min(100%,362px);perspective:950px;position:relative;margin:0 auto 5px;isolation:isolate;display:block}
-.envelope-back{position:absolute;left:0;right:0;top:72px;height:230px;background:#e9dcc9;border:1px solid #d7c2a3;box-shadow:0 22px 40px rgba(16,27,16,.27);z-index:1}
-.letter-card{position:absolute;left:7%;top:84px;width:86%;min-height:210px;padding:23px 14px 26px;background:#fff9ef;border:1px solid #c7ad86;box-shadow:0 1px 9px #6655382e;text-align:center;z-index:2;transition:transform .82s cubic-bezier(.21,.9,.35,1);transition-delay:.58s}
-.letter-card .script-label{display:block;margin:0 0 6px;font:italic 27px/1 'Cormorant Garamond',serif;color:#7d735c}
-.letter-card h1{font:500 clamp(37px,10vw,48px)/.91 'Cormorant Garamond',serif;margin:0;color:#40513b}
-.letter-card h1 em{font-weight:400;font-style:italic;color:#b99154}
-.letter-date{font-size:10px;letter-spacing:2px;font-weight:700;color:#6f7668;margin:13px 0 0}
-.envelope-front{position:absolute;left:0;right:0;top:136px;height:166px;background:linear-gradient(145deg,#f4eadc 0%,#e6d6c0 100%);border:1px solid #d7c2a3;clip-path:polygon(0 0,50% 53%,100% 0,100% 100%,0 100%);z-index:3;box-shadow:inset 0 -7px 14px rgba(135,107,75,.08)}
-.envelope-front:before{content:"";position:absolute;inset:0;background:linear-gradient(140deg,transparent 49.5%,rgba(177,146,103,.25) 50%,transparent 50.6%),linear-gradient(220deg,transparent 49.5%,rgba(177,146,103,.25) 50%,transparent 50.6%);pointer-events:none}
-.envelope-flap{position:absolute;top:72px;left:0;width:100%;height:151px;background:linear-gradient(180deg,#fff8ec,#e9d9c3);clip-path:polygon(0 0,100% 0,50% 100%);filter:drop-shadow(0 1px 1px rgba(130,96,58,.2));z-index:4;transform-origin:center top;backface-visibility:visible}
-.wax{position:absolute;top:176px;bottom:auto;left:50%;width:110px;height:110px;transform:translateX(-50%);border:0;background:transparent;z-index:5;padding:0;transition:transform .25s ease,opacity .25s ease}
-.wax img{width:100%;height:100%;object-fit:contain;background:transparent;filter:drop-shadow(0 8px 8px rgba(61,40,21,.3))}
-.wax:active{transform:translateX(-50%) scale(.95)}
-.envelope.is-opening .envelope-flap{animation:envelope-flip .85s ease-in-out forwards}
-@keyframes envelope-flip{0%{transform:rotateX(0deg);z-index:4}97%{transform:rotateX(177deg);z-index:4}100%{transform:rotateX(180deg);z-index:1}}
-.envelope.is-opening .letter-card{transform:translateY(-112px)}
-.envelope.is-opening .wax{opacity:0;transform:translateX(-50%) scale(.88);pointer-events:none}
-.opening-date{font-size:12px;letter-spacing:2.5px;font-weight:600;color:#e9ddc7;text-align:center;margin:0 0 13px}
-.open-hint{font-size:10px;font-weight:700;letter-spacing:3px;line-height:1.6;border:1px solid #bba077;border-radius:100px;padding:12px 22px;color:#f9eee0;text-align:center;margin:0}
-.opening-in-progress .open-hint{opacity:.5}
-
-/* Ilustraciones botánicas rellenas, reemplazan todos los trazos de línea previos */
-.botanical{display:block;pointer-events:none;object-fit:contain;filter:drop-shadow(0 2px 2px rgba(0,0,0,.04))}
-.hero-left{left:-54px;top:25px;width:142px;height:248px;opacity:.73}
-.hero-right{right:-60px;bottom:54px;width:152px;height:260px;transform:scaleX(-1);opacity:.68}
-.section-branch{width:100px;height:134px;object-fit:contain;opacity:.54}
-.section-branch-left{left:-43px;top:0;transform:rotate(-35deg)}
-.section-branch-right{right:-43px;top:0;transform:scaleX(-1) rotate(-35deg)}
-.rsvp-left{left:-60px;top:18px;width:144px;height:250px;opacity:.60}
-.rsvp-right{right:-63px;bottom:28px;width:145px;height:255px;transform:scaleX(-1);opacity:.52}
-.footer-left{left:-40px;top:20px;width:150px;height:110px;transform:rotate(-38deg);opacity:.65}
-.footer-right{right:-40px;top:20px;width:150px;height:110px;transform:scaleX(-1) rotate(-38deg);opacity:.65}
-
-/* Controles con acabado editorial de boda, táctiles */
-.action-btn{border-radius:999px;min-height:57px;padding:0 20px;font-size:14px;letter-spacing:.5px;box-shadow:0 8px 15px rgba(38,49,32,.11)}
-.action-btn b{display:grid;place-items:center;background:rgba(255,255,255,.18);border-radius:50%;width:30px;height:30px;font-size:19px;font-weight:500}
-.action-btn-outline{background:linear-gradient(180deg,#fffefa 0%,#f9f2e7 100%);border:1px solid #c8ac7c;color:#435738}
-.action-btn-solid{background:linear-gradient(110deg,#637850,#405739);border:1px solid #768962;color:#fff}
-.send-button{border-radius:999px;min-height:72px;background:linear-gradient(180deg,#fffdfa,#f0e7d8);border:1px solid #c5a674;box-shadow:0 10px 22px rgba(38,49,32,.12);padding:13px 16px}
-.send-button strong{font-size:26px}
-.counter-btn{min-width:42px;min-height:42px}
-.action-btn:focus-visible,.wax:focus-visible,.send-button:focus-visible,.counter-btn:focus-visible{outline:3px solid #d2b276;outline-offset:3px}
-
-@media(max-width:365px){
-  .envelope{width:min(100%,330px);height:324px}
-  .envelope-back{top:67px;height:212px}
-  .envelope-front{top:125px;height:154px}
-  .envelope-flap{top:67px;height:139px}
-  .wax{top:157px;width:100px;height:100px}
-  .letter-card{top:77px;min-height:205px;padding:22px 10px}
-  .letter-card h1{font-size:40px}
-  .letter-card .script-label{font-size:24px}
-  .olive-decor{width:165px}
-  .open-hint{padding:10px 18px}
+/* V11: assets approved by client, true PNG transparent, NO envelope animation */
+.opening{
+  position:fixed;inset:0;z-index:50;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+  padding:max(22px,env(safe-area-inset-top)) 12px max(25px,env(safe-area-inset-bottom));
+  background:radial-gradient(ellipse at 50% 34%,#607452,#42573a 68%,#34462f 100%);
+  color:#f7f2e8;
 }
-@media(prefers-reduced-motion:reduce){
-  .envelope.is-opening .envelope-flap{animation:none;transform:rotateX(180deg)}
-  .envelope.is-opening .letter-card{transition:none;transform:translateY(-90px)}
+.opening-inner{
+  position:relative;z-index:2;width:min(100%,430px);min-height:0;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
 }
+.cover-olive{position:absolute;z-index:1;max-width:none;object-fit:contain;pointer-events:none;opacity:.78;filter:drop-shadow(0 3px 5px rgba(12,27,10,.1))}
+.cover-olive-left{width:160px;height:400px;left:-80px;top:-90px}
+.cover-olive-right{width:140px;height:350px;right:-75px;bottom:-70px}
+.opening-kicker{margin:0 0 8px;text-align:center;font-size:10px;letter-spacing:2.7px;color:#fff9f0}
+.opening-subtitle{margin:0 0 13px;color:#e8d4a9;text-align:center;font-size:11px;font-weight:700;letter-spacing:2.2px}
+.cover-names{text-align:center;margin:0;color:#fff9eb;max-width:100%;font:500 clamp(43px,12vw,55px)/.9 'Cormorant Garamond',serif;text-shadow:0 2px 15px rgba(23,37,24,.16)}
+.cover-names em{font-style:italic;color:#d7b77e;font-weight:400}
+.cover-intro{font:italic 27px/1 'Cormorant Garamond',serif;color:#e6d4b2;margin:11px 0 0}
+.approved-envelope{position:relative;width:min(100%,410px);margin:2px auto 0;isolation:isolate;}
+.approved-envelope-image{width:100%;height:auto;display:block;object-fit:contain;filter:drop-shadow(0 18px 22px rgba(19,31,18,.26))}
+.opening .wax{position:absolute;left:50%;top:51%;bottom:auto;transform:translate(-50%,-50%);width:clamp(85px,24vw,104px);height:clamp(85px,24vw,104px);padding:0;border:0;background:transparent;z-index:2;display:grid;place-items:center;touch-action:manipulation}
+.opening .wax img{width:100%;height:100%;object-fit:contain;background:transparent;filter:drop-shadow(0 5px 7px rgba(43,35,24,.3))}
+.opening .wax:focus-visible{outline:2px solid #e2c58f;outline-offset:5px;border-radius:50%}
+.opening-date{font-size:11px;letter-spacing:2.4px;font-weight:700;color:#f3e8d5;margin:0 0 12px;text-align:center}
+.open-hint{font-size:10px;font-weight:700;letter-spacing:2.3px;text-align:center;margin:0;line-height:1.5;color:#f4e9d5;border:1px solid #c7a878;border-radius:999px;padding:11px 22px;background:rgba(255,255,255,.035)}
+
+/* Botanical art: detailed olive images, not outline SVGs */
+.botanical{position:absolute;display:block;object-fit:contain;max-width:none;pointer-events:none;filter:drop-shadow(0 1px 2px rgba(40,38,20,.03))}
+.hero-left{left:-52px;top:50px;width:125px;height:330px;opacity:.66}
+.hero-right{right:-52px;bottom:32px;width:125px;height:330px;transform:none;opacity:.66}
+.section-branch{width:135px;height:240px;opacity:.57;top:-36px}
+.section-branch-left{left:-83px;transform:none}
+.section-branch-right{right:-83px;transform:none}
+.rsvp-left{left:-75px;top:30px;width:132px;height:330px;opacity:.64}
+.rsvp-right{right:-76px;bottom:10px;width:132px;height:330px;transform:none;opacity:.62}
+.footer-left{left:-67px;top:-45px;width:140px;height:310px;opacity:.56}
+.footer-right{right:-67px;top:-45px;width:140px;height:310px;transform:none;opacity:.56}
+/* Avoid ornaments overlapping essential text on very narrow phones */
+@media(max-width:360px){
+  .cover-names{font-size:42px}
+  .cover-olive-left{width:132px;left:-80px}
+  .cover-olive-right{width:130px;right:-88px}
+  .opening .wax{width:88px;height:88px}
+  .hero-left,.hero-right{opacity:.36}
+}
+@media(max-height:700px){
+  .opening-kicker{margin-bottom:5px}
+  .opening-subtitle{margin-bottom:6px}
+  .cover-names{font-size:41px}
+  .cover-intro{margin-top:6px;font-size:24px}
+  .approved-envelope{max-width:350px}
+  .opening-date{margin-bottom:9px}
+  .open-hint{padding:8px 19px}
+}
+
+
+/* V12: difuminado al tocar sello + mesa de regalos con número de evento */
+.opening{opacity:1;filter:blur(0);transition:opacity .45s ease, filter .45s ease;will-change:opacity,filter}
+.opening.is-fading{opacity:0;filter:blur(8px);pointer-events:none}
+.gift-event-card{margin:18px auto 8px;max-width:290px;background:linear-gradient(180deg,#faf6ef 0%,#f2ece1 100%);border:1px solid rgba(199,163,106,.35);border-radius:24px;padding:18px 16px;box-shadow:0 12px 28px rgba(67,82,55,.08)}
+.gift-chip{display:inline-block;padding:8px 14px;border-radius:999px;background:#f6efe3;border:1px solid rgba(199,163,106,.35);font-size:10px;letter-spacing:1.5px;font-weight:700;color:var(--gold-deep);text-transform:uppercase}
+.gift-event-label{margin:14px 0 4px!important;font-size:12px!important;letter-spacing:1.8px;font-weight:700;color:var(--olive-deep);text-transform:uppercase}
+.gift-event-number{margin:0!important;font:600 38px/1 'Cormorant Garamond',serif;color:var(--ink);letter-spacing:2px}
