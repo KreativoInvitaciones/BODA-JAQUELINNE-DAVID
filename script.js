@@ -147,3 +147,27 @@ const calendarContent = [
 const calendarUrl = URL.createObjectURL(new Blob([calendarContent], { type: 'text/calendar;charset=utf-8' }));
 BY('saveCalendar').href = calendarUrl;
 refreshCounts();
+
+// Copiar el número de evento sin alterar la imagen del código de barras.
+const giftCopyButton = BY('copyGiftCode');
+giftCopyButton.addEventListener('click', async () => {
+  const giftNumber = '51962230';
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(giftNumber);
+    } else {
+      const input = document.createElement('textarea');
+      input.value = giftNumber;
+      input.style.position = 'fixed';
+      input.style.opacity = '0';
+      document.body.appendChild(input);
+      input.select();
+      const copied = document.execCommand('copy');
+      input.remove();
+      if (!copied) throw new Error('No se pudo copiar');
+    }
+    BY('giftCopyFeedback').textContent = 'Número copiado';
+  } catch (err) {
+    BY('giftCopyFeedback').textContent = 'Número de evento: 51962230';
+  }
+});

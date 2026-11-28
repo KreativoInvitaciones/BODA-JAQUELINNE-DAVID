@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=13">
+  <link rel="stylesheet" href="style.css?v=14">
 </head>
 <body>
 <div id="opening" class="opening" aria-label="Portada de la invitación">
@@ -114,14 +114,18 @@
     <div class="section-ornament">♡</div>
     <p class="eyebrow">TU PRESENCIA ES LO MÁS IMPORTANTE</p>
     <h2 id="gifts-title">Mesa de regalos</h2>
-    <p>El mejor regalo es compartir este día tan especial con nosotros. Si deseas tener un detalle adicional, te compartimos el número de evento.</p>
-    <div class="gift-event-card" aria-label="Número de evento para mesa de regalos">
-      <span class="gift-chip">Tarjeta del festejado</span>
-      <p class="gift-event-label">Número de evento</p>
+    <p>El mejor regalo es compartir este día tan especial con nosotros. Si deseas tener un detalle adicional, podrás encontrar nuestra mesa de regalos en Liverpool.</p>
+    <div class="gift-event-card" aria-label="Mesa de regalos en Liverpool">
+      <p class="gift-event-label">NUESTRA MESA DE REGALOS ES EN</p>
+      <p class="liverpool-name">Liverpool</p>
+      <p class="gift-event-label">NÚMERO DE EVENTO</p>
       <p class="gift-event-number">51 96 22 30</p>
+      <img class="gift-barcode" src="codigo-barras-liverpool-original.png" width="340" height="156" alt="Código de barras original proporcionado para la mesa de regalos Liverpool" loading="lazy" decoding="async">
+      <button type="button" id="copyGiftCode" class="gift-copy-button" aria-label="Copiar número de evento 51962230">Copiar número de evento</button>
+      <p id="giftCopyFeedback" class="gift-copy-feedback" aria-live="polite"></p>
     </div>
     <div class="gift-line">✧</div>
-    <p class="gift-note">Si necesitas más información sobre la mesa de regalos o transferencia, consulta directamente con los novios.</p>
+    <p class="gift-note">Si necesitas más información, consulta directamente con los novios.</p>
   </section>
 
   <section class="rsvp section-card" aria-labelledby="rsvp-title">
@@ -189,6 +193,6 @@
   </footer>
 </main>
 
-<script src="script.js?v=13"></script>
+<script src="script.js?v=14"></script>
 </body>
 </html>
