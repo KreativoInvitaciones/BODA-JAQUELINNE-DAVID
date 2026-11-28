@@ -7,3 +7,4 @@ La portada es estática: tocar el sello abre directamente la invitación. No se 
 
 
 Actualización incluida: mesa de regalos con número de evento 51 96 22 30 y difuminado al tocar el sello de la portada.
+APERTURA: se difumina durante 1.8 segundos al tocar el sello. El sobre no se anima.

@@ -241,9 +241,12 @@ main{padding:14px 0 32px}
 
 
 /* V12: difuminado al tocar sello + mesa de regalos con número de evento */
-.opening{opacity:1;filter:blur(0);transition:opacity .45s ease, filter .45s ease;will-change:opacity,filter}
+.opening{opacity:1;filter:blur(0);transition:opacity 1.8s cubic-bezier(.33,0,.27,1), filter 1.8s cubic-bezier(.33,0,.27,1);will-change:opacity,filter}
 .opening.is-fading{opacity:0;filter:blur(8px);pointer-events:none}
 .gift-event-card{margin:18px auto 8px;max-width:290px;background:linear-gradient(180deg,#faf6ef 0%,#f2ece1 100%);border:1px solid rgba(199,163,106,.35);border-radius:24px;padding:18px 16px;box-shadow:0 12px 28px rgba(67,82,55,.08)}
 .gift-chip{display:inline-block;padding:8px 14px;border-radius:999px;background:#f6efe3;border:1px solid rgba(199,163,106,.35);font-size:10px;letter-spacing:1.5px;font-weight:700;color:var(--gold-deep);text-transform:uppercase}
 .gift-event-label{margin:14px 0 4px!important;font-size:12px!important;letter-spacing:1.8px;font-weight:700;color:var(--olive-deep);text-transform:uppercase}
 .gift-event-number{margin:0!important;font:600 38px/1 'Cormorant Garamond',serif;color:var(--ink);letter-spacing:2px}
+
+/* Accesibilidad: no forzar difuminado si el dispositivo solicita menos movimiento. */
+@media(prefers-reduced-motion:reduce){.opening{transition:none!important}}

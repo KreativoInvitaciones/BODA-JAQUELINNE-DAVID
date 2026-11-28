@@ -12,30 +12,37 @@ let alreadyOpen = false;
 BY('openInvitation').addEventListener('click', () => {
   if (alreadyOpen) return;
   alreadyOpen = true;
-  opening.classList.add('is-fading');
+
+  // La invitación queda detrás de la portada desde el primer instante.
+  // Solo se desvanece la portada; el sobre permanece estático.
+  content.classList.remove('hidden');
+  window.scrollTo(0, 0);
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reducedMotion) opening.classList.add('is-fading');
+
+  // El audio debe iniciarse dentro del gesto del usuario en iOS/Safari.
+  try {
+    music.volume = 0.55;
+    const started = music.play();
+    if (started && typeof started.then === 'function') {
+      started.then(() => {
+        musicToggle.classList.remove('is-paused');
+        musicToggle.setAttribute('aria-label', 'Pausar música');
+      }).catch(() => {
+        musicToggle.classList.add('is-paused');
+        musicToggle.setAttribute('aria-label', 'Reproducir música');
+      });
+    }
+  } catch (err) {
+    musicToggle.classList.add('is-paused');
+    musicToggle.setAttribute('aria-label', 'Reproducir música');
+  }
+
   window.setTimeout(() => {
     opening.remove();
-    content.classList.remove('hidden');
-    content.focus({ preventScroll: true });
-    window.scrollTo(0, 0);
-    try {
-      music.volume = 0.55;
-      const started = music.play();
-      musicToggle.classList.remove('hidden');
-      if (started && typeof started.then === 'function') {
-        started.then(() => {
-          musicToggle.classList.remove('is-paused');
-          musicToggle.setAttribute('aria-label', 'Pausar música');
-        }).catch(() => {
-          musicToggle.classList.add('is-paused');
-          musicToggle.setAttribute('aria-label', 'Reproducir música');
-        });
-      }
-    } catch (err) {
-      musicToggle.classList.remove('hidden');
-      musicToggle.classList.add('is-paused');
-    }
-  }, 450);
+    content.focus({preventScroll: true});
+    musicToggle.classList.remove('hidden');
+  }, reducedMotion ? 0 : 1800);
 });
 
 musicToggle.addEventListener('click', async () => {
